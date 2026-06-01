@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECF1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- INPUT SECTION -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@android:color/white">
+
+            <!-- NAME -->
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="Enter Name"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:textColor="#222222"
+                android:textColorHint="#B0B0B0"/>
+
+            <!-- STOP -->
+
+            <EditText
+                android:id="@+id/etLocation"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="Enter Stop Name"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:textColor="#222222"
+                android:textColorHint="#B0B0B0"/>
+
+        </LinearLayout>
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What happened?"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- BUTTON 1 -->
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="18dp"
+            android:text="🚌 I am ON the bus now"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/green_button"/>
+
+        <!-- BUTTON 2 -->
+
+        <Button
+            android:id="@+id/btnPassed"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="18dp"
+            android:text="👀 Bus just passed my stop"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#D08B00"
+            android:background="@drawable/white_button"/>
+
+        <!-- BUTTON 3 -->
+
+        <Button
+            android:id="@+id/btnCancelled"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="❌ Morning bus is CANCELLED today"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#E2559A"
+            android:background="@drawable/white_button"/>
+
+        <!-- RECENT PINGS -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent pings"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- RECYCLER -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

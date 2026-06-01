@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="22dp"
+    android:orientation="horizontal">
+
+    <!-- INITIAL -->
+
+    <TextView
+        android:id="@+id/txtInitial"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="AN"
+        android:textColor="#0B8E88"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- TEXTS -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anitha at Vijayawada"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Boarded bus · 08:41 AM"
+            android:textColor="#777777"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

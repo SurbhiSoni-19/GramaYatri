@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_route"
+        android:title="Route"
+        android:icon="@android:drawable/ic_menu_mapmode" />
+
+    <item
+        android:id="@+id/menu_ping"
+        android:title="Ping"
+        android:icon="@android:drawable/ic_menu_mylocation" />
+
+    <item
+        android:id="@+id/menu_alerts"
+        android:title="Alerts"
+        android:icon="@android:drawable/ic_dialog_alert" />
+
+</menu>

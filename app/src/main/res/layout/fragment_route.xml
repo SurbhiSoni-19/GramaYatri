@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECECF1">
+
+    <!-- TITLE -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIVE ROUTE • KOTHAPALLI ➜ VIJAYAWADA"
+        android:textColor="#4B5563"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp" />
+
+    <!-- TOP INFO BOXES -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- BOX 1 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here!"
+                android:textColor="#00796B"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="min to your stop"
+                android:textColor="#6B7280"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <!-- BOX 2 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14"
+                android:textColor="#00796B"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="passengers pinging"
+                android:textColor="#6B7280"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerStops"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="10dp" />
+
+</LinearLayout>
